@@ -1,0 +1,232 @@
+{%  load static %}
+<!DOCTYPE html>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Yale Websites Main</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="yale" />
+        <script type="text/javascript">
+            var chicagoImage= document.getElementById("ChicagoImage");
+            var chicagoImage_tracker = "1";
+            function chicagoChange(){
+                var chicagoImage  = document.getElementById("chicagoImage");
+                if(chicagoImage_tracker == "1"){
+                    image.src = 'test/2.png'
+                    chicagoImage_tracker = "2";}
+                else if(chicagoImage_tracker == "2"){
+                    image.src = 'test/3.png'
+                    chicagoImage_tracker="3"}
+                else if(chicagoImage_tracker == "3"){
+                    image.src = 'test/4.png'
+                    chicagoImage_tracker="4"}
+                else if(chicagoImage_tracker == "4"){
+                    image.src = 'test/5.png'
+                    chicagoImage_tracker="5"}
+                else if(chicagoImage_tracker == "5"){
+                    image.src = 'test/1.png'
+                    chicagoImage_tracker="1"}
+            }
+        </script>
+
+
+
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:site_name" content=""/>
+        <meta property="og:description" content=""/>
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:url" content="" />
+        <meta name="twitter:card" content="" />
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="{%  static 'css/animate.css' %}">
+        <!-- Icomoon Icon Fonts-->
+        <link rel="stylesheet" href="{%  static 'css/icomoon.css' %}">
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="{%  static 'css/bootstrap.css' %}">
+        <!-- Flexslider  -->
+        <link rel="stylesheet" href="{% static 'css/flexslider.css'%}">
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <!-- Modernizr JS -->
+        <script src="https://kit.fontawesome.com/585299ccc9.js" crossorigin="anonymous"></script>
+        <script src="{% static 'Javascript/frameJavascript/modernizr-2.6.2.min.js' %}"></script>
+        <script src="{% static 'Javascript/frameJavascript/respond.min.js' %}"></script>
+
+    </head>
+    <body>
+    <div id="fh5co-page">
+        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+        <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+
+            <h1 id="fh5co-logo"><a href="../home/">Yale</a></h1>
+            <nav id="fh5co-main-menu" role="navigation">
+                <ul>
+                    <li><a href="../home/">Home</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                    <li class="fh5co-active"><a href="../portfolio/">Portfolio</a></li>
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="fh5co-footer">
+                <p><small><span>&copy; Yale website All Rights Reserved.</span></small></p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/YaleYe"><i class="fab fa-github-square"></i></a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <div id="fh5co-main">
+            <div class="fh5co-narrow-content">
+                <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Portfolio</h2>
+                <div class="row row-bottom-padded-md">
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/Chicago.jpg);" id = 'ChicagoImage' onclick = "chicagoChange">
+                            <div class="desc">
+                                <h3>Linkin Park</h3>
+                                <span>Winter 2018</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/SHANHAI.jpg);">
+                            <div class="desc">
+                                <h3>Shanghai</h3>
+                                <span>Summer 2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/Osaka.png);">
+                            <div class="desc">
+                                <h3>Osaka</h3>
+                                <span>Summer 2017</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/chicago2.png);">
+                            <div class="desc">
+                                <h3>chicago</h3>
+                                <span>Winter 2018</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/Cliffs.png);">
+                            <div class="desc">
+                                <h3>Cliffs of Moher</h3>
+                                <span>Fall 2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/Cliffs2.png);">
+                            <div class="desc">
+                                <h3>Cliffs of Moher</h3>
+                                <span>Fall 2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/mtrain.png);">
+                            <div class="desc">
+                                <h3>Mt.Rainer</h3>
+                                <span>Spring 2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/Howth.png);">
+                            <div class="desc">
+                                <h3>Howth Harbor</h3>
+                                <span>Fall 2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/tha.png);">
+                            <div class="desc">
+                                <h3>Thailand</h3>
+                                <span>Summer 2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/tha2.png);">
+                            <div class="desc">
+                                <h3>Thailand</h3>
+                                <span>Summer 2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/shang.png);">
+                            <div class="desc">
+                                <h3>Shanghai</h3>
+                                <span>Summer 2019</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+                        <a href="#" class="work image-popup" style="background-image: url(https://s3.amazonaws.com/yalephotos.com/images/backgroundImage/duque.png);">
+                            <div class="desc">
+                                <h3>Duquesne University</h3>
+                                <span>Spring 2018</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fh5co-narrow-content">
+                <div class="row">
+                    <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                        <h1 class="fh5co-heading-colored">Wanna Learn More About Author?</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                        <p class="fh5co-lead">Other Author Projects</p>
+                        <p><a href="https://github.com/YaleYe" class="btn btn-primary">Learn More</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{% static 'Javascript/frameJavascript/jquery.min.js' %}"></script>
+    <!-- jQuery Easing -->
+    <script src="{% static 'Javascript/frameJavascript/jquery.easing.1.3.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'Javascript/frameJavascript/bootstrap.min.js' %}"></script>
+    <!-- Waypoints -->
+    <script src="{% static 'Javascript/frameJavascript/jquery.waypoints.min.js' %}"></script>
+    <!-- Flexslider -->
+    <script src="{% static 'Javascript/frameJavascript/jquery.flexslider-min.js' %}"></script>
+
+    <!-- MAIN JS -->
+    <script src="{% static 'Javascript/frameJavascript/main.js' %}"></script>
+
+    </body>
+</html>
